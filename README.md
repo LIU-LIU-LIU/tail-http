@@ -15,6 +15,7 @@
 通过http请求此服务时，服务会把请求信息的uri部分用作服务器内的文件路径。  
 也就是如果我想查看/opt/nginx/logs/access.log日志的时候，应该访问地址:`http://localhost:28050/opt/nginx/logs/access.log`  
 你会收到此日志文件的后2000字节的内容  
+> 如果此文件小于8000字节，服务将不会输出内容
 
 ## 编译说明
 下载go环境，  
